@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Riddle Generator</title>
+    <style>
+        body {
+            background: url('./assets/parchmentBG.jpg');
+            background-size: cover;
+
+        }
+
+        @font-face {
+            font-family: 'Pirate-Scrawl';
+            src: url('./assets/soul-handwriting_free-version.ttf');
+        }
+
+        .riddle {
+            margin-top: 20vh;
+            margin-right: auto;
+            margin-left: auto;
+            width: 50%;
+            text-align: center;
+            font-family: Pirate-Scrawl;
+            font-size: larger;
+        }
+
+        #reroll {
+            margin-top: 20px;
+            margin-bottom: 0;
+            width: 100px;
+            height: 100px;
+            background: url('./assets/download.png') no-repeat center;
+            background-size: cover;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='riddle'>
+        <p id='line1'></p>
+        <p id='line2'></p>
+        <button id='reroll'></button>
+        <p style="margin-top: 0; font-size: large">click me to get another riddle!</p>
+    </div>
+
+
+    <script src="libraries/tracery.js"></script>
+    <script src="libraries/mods-eng-basic.js"></script>
+    <script src="riddleGenerator.js"></script>
+</body>
+
+</html>
